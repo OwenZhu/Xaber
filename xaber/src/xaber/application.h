@@ -2,9 +2,9 @@
 
 #include "core.h"
 
-namespace saber {
+namespace xaber {
 
-	class SAB_API Application
+	class XB_API Application
 	{
 	public:
 		Application();

@@ -1,6 +1,6 @@
-#include <saber.h>
+#include <xaber.h>
 
-class Sandbox : public saber::Application {
+class Sandbox : public xaber::Application {
 public:
 	Sandbox() {
 
@@ -11,6 +11,6 @@ public:
 	}
 };
 
-saber::Application* saber::create_application() {
+xaber::Application* xaber::create_application() {
 	return new Sandbox();
 }

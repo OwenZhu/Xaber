@@ -2,21 +2,21 @@
 
 #include <memory>
 
-#ifdef SAB_PLATFORM_WINDOWS
-	#ifdef SAB_BUILD_DLL
-		#define SAB_API __declspec(dllexport)
+#ifdef XB_PLATFORM_WINDOWS
+	#ifdef XB_BUILD_DLL
+		#define XB_API __declspec(dllexport)
 	#else
-		#define SAB_API __declspec(dllimport)
+		#define XB_API __declspec(dllimport)
 	#endif
 
 #else
-	#error saber only supports Windows!
+	#error xaber only supports Windows!
 
 #endif
 
 #define BIT(x) (1 << x)
 
-namespace saber {
+namespace xaber {
 
 	template<typename T>
 	using Scope = std::unique_ptr<T>;
